@@ -2,8 +2,8 @@
    single: Raster; Georeference
 .. _`georef`:
 
-Georeferencer
-==============
+မြေပုံမြေပြင်မှတ်ပုံတင်ရာ (Georeferencer)
+==========================================
 
 .. only:: html
 
@@ -77,7 +77,7 @@ GeoTiff ဖိုင်အသစ်တစ်ခုဖန်တီးခြင်
 
 Table Georeferencer - Georeferencer Tool များ
 
-Usual procedure (သာမန်လုပ်ရိုးလုပ်စဉ်)
+သာမန်လုပ်ရိုးလုပ်စဉ် (Usual procedure)
 ---------------------------------------
 
 ဓာတ်ပုံပေါ်ရှိ ရွေးချယ်ထားသည့် point တစ်ခုနှင့်သက်ဆိုင်သည့် X နှင့် Y ကိုဩဒိနိတ်များ (ဒီဂရီ၊ မိနစ်၊ စက္ကန့် သို့မဟုတ် ဒဿမ ဒီဂရီ သို့မဟုတ် projected လုပ်ထားသည့် ဒသမ မီတာ) ကိုထည့်သွင်းသည့်အခါ လုပ်ရိုးလုပ်စဉ် နှစ်မျိုးကို အသုံးပြုနိုင်ပါသည်-
@@ -103,8 +103,8 @@ world file parameter များကို တွက်ထုတ်ပေးပ�
 
 .. _`georeferencer_entering`:
 
-Entering ground control points (GCPs) (မြေပြင်ထိန်းချုပ်မှတ်များ (GCPs) ထည့်သွင်းခြင်း)
-........................................................................................
+မြေပြင်ထိန်းချုပ်မှတ်များ (GCPs) ထည့်သွင်းခြင်း (Entering ground control points (GCP))
+.......................................................................................
 
 #. Reference မလုပ်ရသေးသည့် raster တစ်ခုကို georeference စလုပ်ရန်အတွက် |addRasterLayer| ခလုတ်ကို အသုံးပြုပါ။ Raster ကို dialog ၏ အဓိကလုပ်ဆောင်မည့် window တွင် ပြသနေမည်ဖြစ်သည်။ Raster ပေါ်လာသည်နှင့် reference point များစတင်ထည့်သွင်းနိုင်ပါသည်။
    
@@ -130,7 +130,7 @@ Entering ground control points (GCPs) (မြေပြင်ထိန်းခ�
 
 .. _`georeferencer_transformation`:
 
-Defining the transformation settings (Transformation setting များ သတ်မှတ်ပေးခြင်း)
+Transformation setting များ သတ်မှတ်ပေးခြင်း (Defining the transformation settings)
 ...................................................................................
 
 Raster ဓာတ်ပုံတွင် GCP များထည့်ပြီးနောက် georeferencing process အတွက် transformation setting များ သတ်မှတ်ပေးရန် လိုအပ်ပါသည်။
@@ -143,7 +143,7 @@ Raster ဓာတ်ပုံတွင် GCP များထည့်ပြီ�
    Georeferencer အတွက် transformation setting များသတ်မှတ်ပေးခြင်း
 
 
-Available Transformation algorithms (အသုံးပြုနိုင်သော Transformation algorithm များ)
+အသုံးပြုနိုင်သော Transformation algorithm များ (Available Transformation algorithms)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ကိုယ်အသုံးပြုမည့် data ၏ အရည်အသွေး၊ နောက်ဆုံးထွက်လာမည့်ပုံတွင် ကိုယ်လက်ခံနိုင်မယ့် ပုံမညီမညာတွန့်လိမ်မှု (geometric distortion) သဘာဝနှင့် ပမာဏ၊ GCP အရေအတွက်တို့ပေါ် မူတည်ပြီး အသုံးပြုလို့ရသည့် transformation algorithm အချို့ရှိပါသည်။
@@ -165,7 +165,7 @@ Available Transformation algorithms (အသုံးပြုနိုင်သ�
 TPS မှလွဲပြီး အထက်တွင်ဖော်ပြခဲ့သည့် algorithm များအားလုံးသည် အနည်းဆုံးလိုအပ်သော GCP အရေအတွက်ထက် ပိုပြီးထည့်သည့်အခါ parameter များ အလိုအလျောက်ပြောင်းလဲသွားပြီး overall residual error (အမှားအကြွင်းကျန်) အနည်းဆုံးဖြစ်အောင် လုပ်ဆောင်ပေးပါသည်။
 ဤနည်းလမ်းသည် regristration error များဖြစ်သည့် point ထောက်သောအခါ အနည်းငယ်လွဲချော်မှု၊ ကိုဩဒိနိတ်တန်ဖိုးထည့်သွင်းသည့်အခါ မှားယွင်းမှု နှင့် အခြား အသေးအမွှား ပုံပျက်နေမှုများ၏ နောက်ဆက်တွဲဆိုးကျိုးများကို အနည်းဆုံးဖြစ်အောင် လုပ်ဆောင်ပေးပါသည်။ အစားထိုးစရာ အခြား GCP များမရှိသောအခါ ၎င်းကဲ့သို့ အမှားများ သို့မဟုတ် ပုံပျက်နေခြင်းများက georeference လုပ်ထားသည့်ပုံများ၏ အစွန်ဘက်တွေမှာ တွန့်လိမ်မှုများ ဖြစ်စေနိုင်ပါသည်။ သို့သော် အနည်းဆုံးလိုအပ်သော GCP အရေအတွက်ထက် ပိုထည့်သည့်အခါ ထွက်လာသည့်ပုံတွင် ခန့်မှန်းပဲ ထည့်ပေးပါသည်။ နှိုင်းယှဉ်ကြည့်သည့်အခါ TPS က ထည့်လိုက်သည့် GCP များအားလုံးကို အတိအကျတွဲပေးသော်လည်း registration error များကြောင့် အနီးအနားရှိ GCP များအကြား  သိသိသာသာပုံပျက်မှုများ ဖြစ်စေနိုင်ပါသည်။
 
-Define the Resampling method (Resampling နည်းလမ်း သတ်မှတ်ခြင်း)
+Resampling နည်းလမ်း သတ်မှတ်ခြင်း (Define the Resampling method)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ကိုယ်ရွေးချယ်သည့် resampling အမျိုးအစားသည် ထည့်သွင်းအသုံးပြုမည့် data နှင့် လုပ်ဆောင်မည့်အဓိကရည်ရွယ်ချက်ပေါ် မူတည်ပါသည်။ Raster ၏ ကိန်းဂဏန်းများကို မပြောင်းလဲလိုလျှင် 'Nearest neighbour' ကိုရွေးချယ်သင့်ပါသည်။ နှိုင်းယှဉ်ကြည့်လျှင် 'cubic resampling' သည် အမြင်အရ ပိုပြီးအဆင်ပြေချောမွေ့သည့် ဓာတ်ပုံကိုရစေပါသည်။
@@ -197,15 +197,15 @@ Georeference ပြုလုပ်ပြီးရရှိလာမည့် ras
 
 * နောက်ဆုံးအဆင့်အနေဖြင့် |checkbox| :guilabel:`Load in QGIS when done` ကိုအမှန်ခြစ်ရွေးချယ်ထားလျှင် transformation လုပ်ပြီးသည်နှင့် ရလာသည့် raster သည် QGIS map canvas တွင် အလိုလိုပေါ်လာမည် ဖြစ်ပါသည်။
 
-Show and adapt raster properties (Raster property များပြသခြင်းနှင့် adapt လုပ်ခြင်း)
-.....................................................................................
+Raster property များပြသခြင်းနှင့် လက်ခကျင့်သုံးခြင်း (Show and adapt raster properties)
+........................................................................................
 
 Georeference ပြုလုပ်ချင်သော raster ၏ :ref:`Layer properties <raster_properties_dialog>` dialog ကိုဖွင့်ပြီး :guilabel:`Settings` ထဲရှိ :guilabel:`Raster properties` ကို နှိပ်လိုက်ပါ။
 
 .. _configure_georeferencer:
 
-Configure the georeferencer (Georeferencer အား ပြင်ဆင်ခြင်း )
-..............................................................
+Georeferencer အား ပြင်ဆင်ခြင်း (Configure the georeferencer)
+.............................................................
 
 * GCP ကိုဩဒိနိတ်တန်ဖိုးများနှင့် ၎င်းတို့၏ ID များကို ဖော်ပြထားမည်/ဖျောက်ထားမည် ကို သတ်မှတ်ပေးနိုင်ပါသည်။
 * Residual units ၊ pixel နှင့် မြေပုံ ယူနစ်များကိုလည်း ရွေးချယ်နိုင်ပါသည်။
@@ -214,8 +214,8 @@ Configure the georeferencer (Georeferencer အား ပြင်ဆင်ခြ
 
 .. _`georeferencer_running`:
 
-Running the transformation (Transformation ကို လုပ်ဆောင်ခြင်း)
-...............................................................
+Transformation ပြုလုပ်ခြင်း (Running the transformation)
+.........................................................
 
 GCP များစု‌စည်းပြီး transformation setting များကို သတ်မှတ်ပြီးနောက် georeference လုပ်ထားသည့် raster အသစ်တစ်ခု ဖန်တီးရန် |start| :sup:`Start georeferencing`
 ခလုပ်ကိုနှိပ်ပါ။
