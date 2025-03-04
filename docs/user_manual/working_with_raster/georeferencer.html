@@ -157,19 +157,19 @@
 <span id="georef"></span><span id="index-0"></span><h1><span class="section-number">17.3. </span>မြေပုံမြေပြင်မှတ်ပုံတင်ရာ (Georeferencer)<a class="headerlink" href="#georeferencer" title="Link to this heading"></a></h1>
 <nav class="contents local" id="contents">
 <ul class="simple">
-<li><p><a class="reference internal" href="#usual-procedure" id="id4">သာမန်လုပ်ရိုးလုပ်စဉ် (Usual procedure)</a></p>
+<li><p><a class="reference internal" href="#usual-procedure" id="id4">ပုံမှန်လုပ်ငန်းစဉ် (Usual procedure)</a></p>
 <ul>
-<li><p><a class="reference internal" href="#gcps-entering-ground-control-points-gcp" id="id5">မြေပြင်ထိန်းချုပ်မှတ်များ (GCPs) ထည့်သွင်းခြင်း (Entering ground control points (GCP))</a></p></li>
-<li><p><a class="reference internal" href="#transformation-setting-defining-the-transformation-settings" id="id6">Transformation setting များ သတ်မှတ်ပေးခြင်း (Defining the transformation settings)</a></p>
+<li><p><a class="reference internal" href="#entering-ground-control-points-gcp" id="id5">မြေပြင်ထိန်းချုပ်မှတ်များ (GCPs) ထည့်သွင်းခြင်း (Entering ground control points (GCP))</a></p></li>
+<li><p><a class="reference internal" href="#defining-the-transformation-settings" id="id6">Transformation setting များ သတ်မှတ်ပေးခြင်း (Defining the transformation settings)</a></p>
 <ul>
-<li><p><a class="reference internal" href="#transformation-algorithm-available-transformation-algorithms" id="id7">အသုံးပြုနိုင်သော Transformation algorithm များ (Available Transformation algorithms)</a></p></li>
-<li><p><a class="reference internal" href="#resampling-define-the-resampling-method" id="id8">Resampling နည်းလမ်း သတ်မှတ်ခြင်း (Define the Resampling method)</a></p></li>
-<li><p><a class="reference internal" href="#define-the-transformation-settings-transformation-setting" id="id9">Define the transformation settings (Transformation setting များ သတ်မှတ်ခြင်း)</a></p></li>
+<li><p><a class="reference internal" href="#available-transformation-algorithms" id="id7">အသုံးပြုနိုင်သော Transformation algorithm များ (Available Transformation algorithms)</a></p></li>
+<li><p><a class="reference internal" href="#define-the-resampling-method" id="id8">Resampling နည်းလမ်း သတ်မှတ်ခြင်း (Define the Resampling method)</a></p></li>
+<li><p><a class="reference internal" href="#define-the-transformation-settings" id="id9">Transformation setting များ သတ်မှတ်ခြင်း (Define the transformation settings)</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#raster-property-show-and-adapt-raster-properties" id="id10">Raster property များပြသခြင်းနှင့် လက်ခကျင့်သုံးခြင်း (Show and adapt raster properties)</a></p></li>
-<li><p><a class="reference internal" href="#georeferencer-configure-the-georeferencer" id="id11">Georeferencer အား ပြင်ဆင်ခြင်း (Configure the georeferencer)</a></p></li>
-<li><p><a class="reference internal" href="#transformation-running-the-transformation" id="id12">Transformation ပြုလုပ်ခြင်း (Running the transformation)</a></p></li>
+<li><p><a class="reference internal" href="#show-and-adapt-raster-properties" id="id10">Raster property များပြသခြင်းနှင့် လက်ခကျင့်သုံးခြင်း (Show and adapt raster properties)</a></p></li>
+<li><p><a class="reference internal" href="#configure-the-georeferencer" id="id11">Georeferencer အား ပြင်ဆင်ခြင်း (Configure the georeferencer)</a></p></li>
+<li><p><a class="reference internal" href="#running-the-transformation" id="id12">Transformation ပြုလုပ်ခြင်း (Running the transformation)</a></p></li>
 </ul>
 </li>
 </ul>
@@ -252,7 +252,7 @@ GeoTiff ဖိုင်အသစ်တစ်ခုဖန်တီးခြင်
 </table>
 <p>Table Georeferencer - Georeferencer Tool များ</p>
 <section id="usual-procedure">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">17.3.1. </span>သာမန်လုပ်ရိုးလုပ်စဉ် (Usual procedure)</a><a class="headerlink" href="#usual-procedure" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink"><span class="section-number">17.3.1. </span>ပုံမှန်လုပ်ငန်းစဉ် (Usual procedure)</a><a class="headerlink" href="#usual-procedure" title="Link to this heading"></a></h2>
 <p>ဓာတ်ပုံပေါ်ရှိ ရွေးချယ်ထားသည့် point တစ်ခုနှင့်သက်ဆိုင်သည့် X နှင့် Y ကိုဩဒိနိတ်များ (ဒီဂရီ၊ မိနစ်၊ စက္ကန့် သို့မဟုတ် ဒဿမ ဒီဂရီ သို့မဟုတ် projected လုပ်ထားသည့် ဒသမ မီတာ) ကိုထည့်သွင်းသည့်အခါ လုပ်ရိုးလုပ်စဉ် နှစ်မျိုးကို အသုံးပြုနိုင်ပါသည်-</p>
 <ul class="simple">
 <li><p>တခါတရံ ဓာတ်ပုံပေါ်တွင် တည်နေရာတန်ဖိုးများ ရေးထားသည့် ကြက်ခြေခတ်အမှတ်အသားများ ‌ဖော်ပြထားတတ်ပါသည်။ ထိုအခြေအနေတွင် တည်နေရာတန်ဖိုးများကို လက်ဖြင့်ရိုက်ထည့်နိုင်ပါသည်။</p></li>
@@ -269,7 +269,7 @@ world file parameter များကို တွက်ထုတ်ပေးပ�
 <p><span class="caption-number">Fig. 17.24 </span><span class="caption-text">Georeferencer Dialog</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<section id="gcps-entering-ground-control-points-gcp">
+<section id="entering-ground-control-points-gcp">
 <span id="georeferencer-entering"></span><h3><a class="toc-backref" href="#id5" role="doc-backlink"><span class="section-number">17.3.1.1. </span>မြေပြင်ထိန်းချုပ်မှတ်များ (GCPs) ထည့်သွင်းခြင်း (Entering ground control points (GCP))</a><a class="headerlink" href="#gcps-entering-ground-control-points-gcp" title="Link to this heading"></a></h3>
 <ol class="arabic simple">
 <li><p>Reference မလုပ်ရသေးသည့် raster တစ်ခုကို georeference စလုပ်ရန်အတွက် <a class="reference internal" href="../../../_images/mActionAddRasterLayer.png"><img alt="addRasterLayer" src="../../../_images/mActionAddRasterLayer.png" style="width: 1.5em;" /></a> ခလုတ်ကို အသုံးပြုပါ။ Raster ကို dialog ၏ အဓိကလုပ်ဆောင်မည့် window တွင် ပြသနေမည်ဖြစ်သည်။ Raster ပေါ်လာသည်နှင့် reference point များစတင်ထည့်သွင်းနိုင်ပါသည်။</p></li>
@@ -291,7 +291,7 @@ world file parameter များကို တွက်ထုတ်ပေးပ�
 </figure>
 <p>မြေပုံတွင် အသစ်ထည့်လိုက်သည့် point များကို သီးသန့် text file တစ်ခု (<code class="file docutils literal notranslate"><span class="pre">[filename].points</span></code>) အဖြစ် raster ဓာတ်ပုံနှင့်အတူရောပြီး သိမ်းဆည်းထားပါသည်။ နောက်ပိုင်း ကိုယ် georeferece လုပ်ထားသည့်ပုံကို ပြင်ဆင်ချင်သည့်အခါ ယခုသိမ်းထားသည့် file ကိုပြန်ဖွင့် (reload) ပြီး point များဖျက်ပစ်ခြင်း၊ အသစ်ထည့်ခြင်းများကို လုပ်ဆောင်နိုင်ပါသည်။ Point file ထဲတွင် <code class="docutils literal notranslate"><span class="pre">mapX,</span> <span class="pre">mapY,</span> <span class="pre">pixelX,</span> <span class="pre">pixelY</span></code> ပုံစံဖြင့် တန်ဖိုးများပါဝင်ပါသည်။ File များကို စီမံခန့်ခွဲရန် <a class="reference internal" href="../../../_images/mActionLoadGCPpoints.png"><img alt="loadGCPpoints" src="../../../_images/mActionLoadGCPpoints.png" style="width: 1.5em;" /></a> <sup>Load GCP points</sup> နှင့် <a class="reference internal" href="../../../_images/mActionSaveGCPpointsAs.png"><img alt="saveGCPPointsAs" src="../../../_images/mActionSaveGCPpointsAs.png" style="width: 1.5em;" /></a> <sup>Save GCP points as</sup> ခလုတ်များကို အသုံးပြုနိုင်ပါသည်။</p>
 </section>
-<section id="transformation-setting-defining-the-transformation-settings">
+<section id="defining-the-transformation-settings">
 <span id="georeferencer-transformation"></span><h3><a class="toc-backref" href="#id6" role="doc-backlink"><span class="section-number">17.3.1.2. </span>Transformation setting များ သတ်မှတ်ပေးခြင်း (Defining the transformation settings)</a><a class="headerlink" href="#transformation-setting-defining-the-transformation-settings" title="Link to this heading"></a></h3>
 <p>Raster ဓာတ်ပုံတွင် GCP များထည့်ပြီးနောက် georeferencing process အတွက် transformation setting များ သတ်မှတ်ပေးရန် လိုအပ်ပါသည်။</p>
 <figure class="align-center" id="id3">
@@ -300,7 +300,7 @@ world file parameter များကို တွက်ထုတ်ပေးပ�
 <p><span class="caption-number">Fig. 17.26 </span><span class="caption-text">Georeferencer အတွက် transformation setting များသတ်မှတ်ပေးခြင်း</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
 </figcaption>
 </figure>
-<section id="transformation-algorithm-available-transformation-algorithms">
+<section id="available-transformation-algorithms">
 <h4><a class="toc-backref" href="#id7" role="doc-backlink">အသုံးပြုနိုင်သော Transformation algorithm များ (Available Transformation algorithms)</a><a class="headerlink" href="#transformation-algorithm-available-transformation-algorithms" title="Link to this heading"></a></h4>
 <p>ကိုယ်အသုံးပြုမည့် data ၏ အရည်အသွေး၊ နောက်ဆုံးထွက်လာမည့်ပုံတွင် ကိုယ်လက်ခံနိုင်မယ့် ပုံမညီမညာတွန့်လိမ်မှု (geometric distortion) သဘာဝနှင့် ပမာဏ၊ GCP အရေအတွက်တို့ပေါ် မူတည်ပြီး အသုံးပြုလို့ရသည့် transformation algorithm အချို့ရှိပါသည်။</p>
 <p>ယခုလက်ရှိတွင် အောက်ပါ <span class="guilabel">Transformation types</span> (Transformation အမျိုးအစား) များကို အသုံးပြုလို့ရနိုင်ပါသည်-</p>
@@ -315,7 +315,7 @@ world file parameter များကို တွက်ထုတ်ပေးပ�
 <p>TPS မှလွဲပြီး အထက်တွင်ဖော်ပြခဲ့သည့် algorithm များအားလုံးသည် အနည်းဆုံးလိုအပ်သော GCP အရေအတွက်ထက် ပိုပြီးထည့်သည့်အခါ parameter များ အလိုအလျောက်ပြောင်းလဲသွားပြီး overall residual error (အမှားအကြွင်းကျန်) အနည်းဆုံးဖြစ်အောင် လုပ်ဆောင်ပေးပါသည်။
 ဤနည်းလမ်းသည် regristration error များဖြစ်သည့် point ထောက်သောအခါ အနည်းငယ်လွဲချော်မှု၊ ကိုဩဒိနိတ်တန်ဖိုးထည့်သွင်းသည့်အခါ မှားယွင်းမှု နှင့် အခြား အသေးအမွှား ပုံပျက်နေမှုများ၏ နောက်ဆက်တွဲဆိုးကျိုးများကို အနည်းဆုံးဖြစ်အောင် လုပ်ဆောင်ပေးပါသည်။ အစားထိုးစရာ အခြား GCP များမရှိသောအခါ ၎င်းကဲ့သို့ အမှားများ သို့မဟုတ် ပုံပျက်နေခြင်းများက georeference လုပ်ထားသည့်ပုံများ၏ အစွန်ဘက်တွေမှာ တွန့်လိမ်မှုများ ဖြစ်စေနိုင်ပါသည်။ သို့သော် အနည်းဆုံးလိုအပ်သော GCP အရေအတွက်ထက် ပိုထည့်သည့်အခါ ထွက်လာသည့်ပုံတွင် ခန့်မှန်းပဲ ထည့်ပေးပါသည်။ နှိုင်းယှဉ်ကြည့်သည့်အခါ TPS က ထည့်လိုက်သည့် GCP များအားလုံးကို အတိအကျတွဲပေးသော်လည်း registration error များကြောင့် အနီးအနားရှိ GCP များအကြား  သိသိသာသာပုံပျက်မှုများ ဖြစ်စေနိုင်ပါသည်။</p>
 </section>
-<section id="resampling-define-the-resampling-method">
+<section id="define-the-resampling-method">
 <h4><a class="toc-backref" href="#id8" role="doc-backlink">Resampling နည်းလမ်း သတ်မှတ်ခြင်း (Define the Resampling method)</a><a class="headerlink" href="#resampling-define-the-resampling-method" title="Link to this heading"></a></h4>
 <p>ကိုယ်ရွေးချယ်သည့် resampling အမျိုးအစားသည် ထည့်သွင်းအသုံးပြုမည့် data နှင့် လုပ်ဆောင်မည့်အဓိကရည်ရွယ်ချက်ပေါ် မူတည်ပါသည်။ Raster ၏ ကိန်းဂဏန်းများကို မပြောင်းလဲလိုလျှင် ‘Nearest neighbour’ ကိုရွေးချယ်သင့်ပါသည်။ နှိုင်းယှဉ်ကြည့်လျှင် ‘cubic resampling’ သည် အမြင်အရ ပိုပြီးအဆင်ပြေချောမွေ့သည့် ဓာတ်ပုံကိုရစေပါသည်။</p>
 <p>Resamping နည်းလမ်း ၅ မျိုးရွေးချယ်နိုင်ပါသည်-</p>
@@ -327,8 +327,8 @@ world file parameter များကို တွက်ထုတ်ပေးပ�
 <li><p>Lanczos</p></li>
 </ol>
 </section>
-<section id="define-the-transformation-settings-transformation-setting">
-<h4><a class="toc-backref" href="#id9" role="doc-backlink">Define the transformation settings (Transformation setting များ သတ်မှတ်ခြင်း)</a><a class="headerlink" href="#define-the-transformation-settings-transformation-setting" title="Link to this heading"></a></h4>
+<section id="define-the-transformation-settings">
+<h4><a class="toc-backref" href="#id9" role="doc-backlink">Transformation setting များ သတ်မှတ်ခြင်း (Define the transformation settings)</a><a class="headerlink" href="#define-the-transformation-settings-transformation-setting" title="Link to this heading"></a></h4>
 <p>Georeference ပြုလုပ်ပြီးရရှိလာမည့် raster အတွက် သတ်မှတ်ပေးစရာ နည်းလမ်းများစွာရှိပါသည်။</p>
 <ul class="simple">
 <li><p>Linear tranformation အမျိုးအစားသည် raster ဓာတ်ပုံကို အမှန်တကယ်ပြောင်းလဲမည်မဟုတ်သည့်အတွက် ထိုနည်းကို အသုံးပြုမှသာ <a class="reference internal" href="../../../_images/checkbox.png"><img alt="checkbox" src="../../../_images/checkbox.png" style="width: 1.3em;" /></a> <span class="guilabel">Create world file</span> ကို အမှန်ခြစ်ပြီးရွေးချယ်လို့ရနိုင်ပါသည်။ ဤဖြစ်စဉ်တွင် world file အသစ်တစ်ခုကိုသာ ဖန်တီးပေးသည့်အတွက် <span class="guilabel">Output raster</span> field သည် activate ဖြစ်လာမည်မဟုတ်ပါ။</p></li>
@@ -341,11 +341,11 @@ world file parameter များကို တွက်ထုတ်ပေးပ�
 </ul>
 </section>
 </section>
-<section id="raster-property-show-and-adapt-raster-properties">
+<section id="show-and-adapt-raster-properties">
 <h3><a class="toc-backref" href="#id10" role="doc-backlink"><span class="section-number">17.3.1.3. </span>Raster property များပြသခြင်းနှင့် လက်ခကျင့်သုံးခြင်း (Show and adapt raster properties)</a><a class="headerlink" href="#raster-property-show-and-adapt-raster-properties" title="Link to this heading"></a></h3>
 <p>Georeference ပြုလုပ်ချင်သော raster ၏ <a class="reference internal" href="raster_properties.html#raster-properties-dialog"><span class="std std-ref">Layer properties</span></a> dialog ကိုဖွင့်ပြီး <span class="guilabel">Settings</span> ထဲရှိ <span class="guilabel">Raster properties</span> ကို နှိပ်လိုက်ပါ။</p>
 </section>
-<section id="georeferencer-configure-the-georeferencer">
+<section id="configure-the-georeferencer">
 <span id="configure-georeferencer"></span><h3><a class="toc-backref" href="#id11" role="doc-backlink"><span class="section-number">17.3.1.4. </span>Georeferencer အား ပြင်ဆင်ခြင်း (Configure the georeferencer)</a><a class="headerlink" href="#georeferencer-configure-the-georeferencer" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>GCP ကိုဩဒိနိတ်တန်ဖိုးများနှင့် ၎င်းတို့၏ ID များကို ဖော်ပြထားမည်/ဖျောက်ထားမည် ကို သတ်မှတ်ပေးနိုင်ပါသည်။</p></li>
@@ -354,7 +354,7 @@ world file parameter များကို တွက်ထုတ်ပေးပ�
 <li><p>နောက်ဆုံးအနေဖြင့် <a class="reference internal" href="../../../_images/checkbox.png"><img alt="checkbox" src="../../../_images/checkbox.png" style="width: 1.3em;" /></a> <span class="guilabel">Show Georeferencer window docked</span> ကိုလည်း အမှန်ခြစ်ပြီး activate လုပ်ထားလို့ရပါသည်။</p></li>
 </ul>
 </section>
-<section id="transformation-running-the-transformation">
+<section id="running-the-transformation">
 <span id="georeferencer-running"></span><h3><a class="toc-backref" href="#id12" role="doc-backlink"><span class="section-number">17.3.1.5. </span>Transformation ပြုလုပ်ခြင်း (Running the transformation)</a><a class="headerlink" href="#transformation-running-the-transformation" title="Link to this heading"></a></h3>
 <p>GCP များစု‌စည်းပြီး transformation setting များကို သတ်မှတ်ပြီးနောက် georeference လုပ်ထားသည့် raster အသစ်တစ်ခု ဖန်တီးရန် <a class="reference internal" href="../../../_images/mActionStart.png"><img alt="start" src="../../../_images/mActionStart.png" style="width: 1.5em;" /></a> <sup>Start georeferencing</sup>
 ခလုပ်ကိုနှိပ်ပါ။</p>
